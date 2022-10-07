@@ -7,7 +7,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.by import By
 from PIL import Image
 import ddddocr
-
+import random
 print('初始化浏览器')
 USERNAME   = os.environ['ID']
 PASSWORD   = os.environ['PASSWORD']
@@ -35,7 +35,7 @@ def tryClick(id):
 		pass
 
 driver.execute_cdp_cmd('Network.setUserAgentOverride', {"userAgent": ua + ' ' + app})
-
+sleep(random.randnint(0,20))
 
 def yzm():
 	try:
