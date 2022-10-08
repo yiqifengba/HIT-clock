@@ -35,7 +35,7 @@ def tryClick(id):
 		pass
 
 driver.execute_cdp_cmd('Network.setUserAgentOverride', {"userAgent": ua + ' ' + app})
-sleep(random.randnint(0,20))
+sleep(random.randint(0,1200))
 
 def yzm():
 	try:
